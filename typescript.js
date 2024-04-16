@@ -31,7 +31,6 @@ module.exports = {
 		],
 		'padded-blocks': 'off',
 		'prefer-destructuring': 'off',
-		'sort-keys': ['error'],
 		radix: ['error', 'as-needed'],
 
 		/* General */
