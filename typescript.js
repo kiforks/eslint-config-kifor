@@ -17,15 +17,6 @@ module.exports = {
 		'no-restricted-globals': 'off',
 		'no-return-assign': 'off',
 		'no-underscore-dangle': 'off',
-		'object-curly-newline': [
-			'error',
-			{
-				ExportDeclaration: { multiline: true },
-				ImportDeclaration: { multiline: true },
-				ObjectExpression: { minProperties: 8, multiline: true },
-				ObjectPattern: { minProperties: 8, multiline: true },
-			},
-		],
 		'padded-blocks': 'off',
 		'prefer-destructuring': 'off',
 		radix: ['error', 'as-needed'],
