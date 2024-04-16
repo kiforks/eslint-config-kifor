@@ -39,8 +39,7 @@
 		"kskifor",
 		"eslint",
 		"eslint-config",
-		"eslint config",
-		"kifor"
+		"eslint config"
 	],
 	"dependencies": {
 		"@angular-eslint/builder": "17.3.0",
