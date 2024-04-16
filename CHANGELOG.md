@@ -1,5 +1,11 @@
 # Changelog
 
+<a name="1.0.1"></a>
+# 1.0.1
+
+1. [x] Fixed: changelog
+
+
 <a name="1.0.0"></a>
 # 1.0.0
 
