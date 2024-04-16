@@ -1,5 +1,10 @@
 # Changelog
 
+<a name="1.0.1"></a>
+# 1.0.1
+
+1. [x] Fixed: changelog ([#1](https://github.com/kiforks/eslint-kifor-config/pull/1)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.0.0"></a>
 # 1.0.0
 
