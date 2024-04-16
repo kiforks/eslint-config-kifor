@@ -15,5 +15,7 @@ module.exports = {
 
 		/* Angular */
 		'@angular-eslint/prefer-on-push-component-change-detection': 'off',
+
+		'max-lines': 'off',
 	},
 };
