@@ -10,9 +10,6 @@ module.exports = {
 		'@typescript-eslint/prefer-destructuring': 'error',
 		'@typescript-eslint/sort-type-constituents': 'error',
 		'@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
-
-		'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
-		'class-methods-use-this': ['error', { exceptMethods: ['beforeUnloadHander', 'trackBy', 'transform', 'windowRef'] }],
 		'max-len': ['error', 180],
 		'max-lines': ['error', 500],
 		'no-param-reassign': ['error', { props: false }],
@@ -25,8 +22,8 @@ module.exports = {
 			{
 				ExportDeclaration: { multiline: true },
 				ImportDeclaration: { multiline: true },
-				ObjectExpression: { minProperties: 4, multiline: true },
-				ObjectPattern: { minProperties: 4, multiline: true },
+				ObjectExpression: { minProperties: 8, multiline: true },
+				ObjectPattern: { minProperties: 8, multiline: true },
 			},
 		],
 		'padded-blocks': 'off',

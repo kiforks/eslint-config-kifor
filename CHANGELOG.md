@@ -1,5 +1,10 @@
 # Changelog
 
+<a name="1.0.4"></a>
+# 1.0.4
+
+1. [x] Fixed: tests and typescript configs ([#4](https://github.com/kiforks/eslint-config-kifor/pull/4)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.0.3"></a>
 # 1.0.3
 
