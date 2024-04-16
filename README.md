@@ -9,13 +9,13 @@
 ℹ️ `eslint` dependencies are included, so you can remove all `eslint` related dependencies from your project.
 
 ```sh
-npm install eslint-config-kifor --save-dev
+npm install eslint eslint-config-kifor @typescript-eslint/eslint-plugin --save-dev
 ```
 
 or
 
 ```sh
-yarn add eslint-config-kifor --dev
+yarn add eslint eslint-config-kifor @typescript-eslint/eslint-plugin --dev
 ```
 
 ## Configure ESLint

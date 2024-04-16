@@ -1,5 +1,10 @@
 # Changelog
 
+<a name="1.0.6"></a>
+# 1.0.6
+
+1. [x] Fixed: peer dependencies' ([6](https://github.com/kiforks/eslint-config-kifor/pull/6)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.0.5"></a>
 # 1.0.5
 
