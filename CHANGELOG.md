@@ -1,5 +1,10 @@
 # Changelog
 
+<a name="1.0.2"></a>
+# 1.0.2
+
+1. [x] Fixed: core dependencies ([#2](https://github.com/kiforks/eslint-kifor-config/pull/2)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.0.1"></a>
 # 1.0.1
 
