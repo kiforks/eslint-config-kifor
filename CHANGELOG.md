@@ -1,5 +1,10 @@
 # Changelog
 
+<a name="1.0.3"></a>
+# 1.0.3
+
+1. [x] Removed: sort keys rule ([#3](https://github.com/kiforks/eslint-kifor-config/pull/3)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.0.2"></a>
 # 1.0.2
 
