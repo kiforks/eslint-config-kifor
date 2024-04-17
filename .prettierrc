@@ -6,5 +6,5 @@
 	"printWidth": 120,
 	"htmlWhitespaceSensitivity": "ignore",
 	"arrowParens": "avoid",
-	"quoteProps": "preserve",
+	"quoteProps": "preserve"
 }
