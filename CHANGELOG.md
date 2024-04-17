@@ -1,5 +1,10 @@
 # Changelog
 
+<a name="1.0.8"></a>
+# 1.0.8
+
+1. [x] Fixed: angular template config ([8](https://github.com/kiforks/eslint-config-kifor/pull/8)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.0.7"></a>
 # 1.0.7
 
