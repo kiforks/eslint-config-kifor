@@ -1,6 +1,6 @@
 module.exports = {
-	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
-	plugins: ['prettier', '@typescript-eslint', '@stylistic/js', '@stylistic/ts', 'max-params-no-constructor'],
+	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+	plugins: ['@typescript-eslint', '@stylistic/js', '@stylistic/ts', 'max-params-no-constructor'],
 	rules: {
 		'@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 		'@typescript-eslint/no-explicit-any': 'off',
@@ -26,9 +26,8 @@ module.exports = {
 		'require-await': ['error'],
 		'no-return-await': ['error'],
 		'object-shorthand': ['error', 'always'],
-		'prettier/prettier': ['error'],
 		'max-nested-callbacks': ['error', 2],
-		'no-console': ['error', { 'allow': ['warn', 'error'] }],
+		'no-console': ['error', { allow: ['warn', 'error'] }],
 		'arrow-body-style': ['error', 'as-needed'],
 		'max-params-no-constructor/max-params-no-constructor': ['error', 3],
 
@@ -38,8 +37,8 @@ module.exports = {
 
 			// ban "this" in static methods
 			{
-				'selector': 'MethodDefinition[static = true] ThisExpression',
-				'message': 'Unexpected "this" in static method. Use class name instead.',
+				selector: 'MethodDefinition[static = true] ThisExpression',
+				message: 'Unexpected "this" in static method. Use class name instead.',
 			},
 		],
 
@@ -60,22 +59,22 @@ module.exports = {
 		/* Typescript */
 		'@typescript-eslint/no-unused-vars': 'off',
 		'@typescript-eslint/await-thenable': 'error',
-		'@typescript-eslint/no-confusing-void-expression': ['error', { 'ignoreArrowShorthand': true }],
-		'@typescript-eslint/array-type': ['error', { 'default': 'array-simple' }],
-		'@typescript-eslint/explicit-function-return-type': ['error', { 'allowExpressions': true }],
+		'@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
+		'@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+		'@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
 		'@typescript-eslint/ban-ts-comment': [
 			'error',
 			{
 				'ts-ignore': 'allow-with-description',
 				'ts-expect-error': 'allow-with-description',
-				'minimumDescriptionLength': 10,
+				minimumDescriptionLength: 10,
 			},
 		],
 
 		// Public/private modifiers
 		'@typescript-eslint/explicit-member-accessibility': [
 			'error',
-			{ 'overrides': { 'constructors': 'no-public' } }, // constructor is an exeption
+			{ overrides: { constructors: 'no-public' } }, // constructor is an exeption
 		],
 
 		// Order
@@ -152,7 +151,7 @@ module.exports = {
 			'error',
 
 			// All enum keys should be in PascalCase
-			{ 'selector': ['enumMember'], 'format': ['PascalCase'] },
+			{ selector: ['enumMember'], format: ['PascalCase'] },
 		],
 	},
 };
