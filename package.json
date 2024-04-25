@@ -1,10 +1,18 @@
 {
 	"name": "eslint-config-kifor",
 	"description": "eslint shareable config",
-	"version": "1.0.8",
+	"version": "1.1.0",
 	"engines": {
 		"node": ">=20.8.1"
 	},
+	"files": [
+		"angular-template.js",
+		"angular-typescript.js",
+		"tests.js",
+		"tests-jasmine.js",
+		"tests-jest.js",
+		"typescript.js"
+	],
 	"license": "MIT",
 	"author": {
 		"name": "Kifor Kostiantyn",
@@ -43,7 +51,6 @@
 		"kifor"
 	],
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^7.7.0",
 		"@angular-eslint/builder": "17.3.0",
 		"@angular-eslint/eslint-plugin": "17.3.0",
 		"@angular-eslint/eslint-plugin-template": "17.3.0",
@@ -51,10 +58,12 @@
 		"@angular-eslint/template-parser": "17.3.0",
 		"@stylistic/eslint-plugin-js": "^1.7.2",
 		"@stylistic/eslint-plugin-ts": "^1.7.2",
+		"@typescript-eslint/eslint-plugin": "^7.7.0",
 		"@typescript-eslint/parser": "^7.7.0",
 		"eslint-config-angular-strict": "^1.0.7",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-jasmine": "^4.1.3",
+		"eslint-plugin-jest": "^28.2.0",
 		"eslint-plugin-max-params-no-constructor": "^0.0.4",
 		"eslint-plugin-prettier": "^5.1.3",
 		"eslint-scope": "8.0.1",
@@ -64,6 +73,8 @@
 		"eslint": "^8.57.0"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^19.3.0",
+		"@commitlint/config-conventional": "^19.2.2",
 		"husky": "^9.0.11",
 		"kifor-prettier-config": "^1.0.5",
 		"typescript": "5.4.5"
@@ -77,18 +88,5 @@
 		"format:check": "npx prettier '**/*.{ts,html,js,json,yml}' --check",
 		"prepare": "husky install",
 		"prerelease": "npm run lint:check && npm run format:check"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"*.{js,ts}": [
-			"eslint"
-		],
-		"*.{html,ts,js,json}": [
-			"prettier --check"
-		]
 	}
 }

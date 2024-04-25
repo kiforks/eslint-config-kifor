@@ -49,10 +49,41 @@ module.exports = {
 			{ blankLine: 'always', prev: 'block-like', next: '*' },
 			{ blankLine: 'always', prev: '*', next: 'if' },
 			{ blankLine: 'always', prev: 'if', next: '*' },
+
+			// After directives (like 'use-strict'), except between directives
+			{ blankLine: 'always', prev: 'directive', next: '*' },
+			{ blankLine: 'any', prev: 'directive', next: 'directive' },
+
+			// After imports, except between imports
+			{ blankLine: 'always', prev: 'import', next: '*' },
+			{ blankLine: 'any', prev: 'import', next: 'import' },
+
+			// Before and after every sequence of variable declarations
+			{ blankLine: 'always', prev: '*', next: ['const', 'let', 'var'] },
+			{ blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+			{ blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
+
+			// Before and after class declaration, if, while, switch, try
+			{ blankLine: 'always', prev: '*', next: ['class', 'if', 'while', 'switch', 'try'] },
+			{ blankLine: 'always', prev: ['class', 'if', 'while', 'switch', 'try'], next: '*' },
+
+			// Before return statements
+			{ blankLine: 'always', prev: '*', next: 'return' },
+
+			{ blankLine: 'always', prev: 'const', next: 'let' },
+			{ blankLine: 'always', prev: 'let', next: 'const' },
+
+			{ blankLine: 'always', prev: 'block-like', next: 'block-like' },
 		],
 		'@stylistic/ts/lines-between-class-members': [
 			'error',
-			{ enforce: [{ blankLine: 'always', prev: 'method', next: 'method' }] },
+			{
+				enforce: [
+					{ blankLine: 'always', prev: 'method', next: 'method' },
+					{ blankLine: 'always', prev: 'field', next: 'method' },
+					{ blankLine: 'always', prev: 'method', next: 'field' },
+				],
+			},
 			{ exceptAfterOverload: true },
 		],
 
@@ -153,5 +184,7 @@ module.exports = {
 			// All enum keys should be in PascalCase
 			{ selector: ['enumMember'], format: ['PascalCase'] },
 		],
+
+		'quote-props': ['error', 'as-needed'],
 	},
 };

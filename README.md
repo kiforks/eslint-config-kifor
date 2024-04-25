@@ -9,13 +9,13 @@
 ℹ️ `eslint` dependencies are included, so you can remove all `eslint` related dependencies from your project.
 
 ```sh
-npm install eslint eslint-config-kifor @typescript-eslint/eslint-plugin --save-dev
+npm install eslint eslint-config-kifor--save-dev
 ```
 
 or
 
 ```sh
-yarn add eslint eslint-config-kifor @typescript-eslint/eslint-plugin --dev
+yarn add eslint eslint-config-kifor --dev
 ```
 
 ## Configure ESLint
@@ -23,6 +23,7 @@ yarn add eslint eslint-config-kifor @typescript-eslint/eslint-plugin --dev
 Within your **ESLint** config file:
 
 ```javascript
+// .eslintrc.js file
 module.exports = {
   root: true,
   ignorePatterns: ['*.js'],
@@ -35,20 +36,50 @@ module.exports = {
         project: ['tsconfig.json'],
         createDefaultProgram: true,
       },
-        extends: ['kifor/typescript', 'kifor/angular-typescript'],
-      },
-      {
-        files: ['*.spec.ts', '*.host.ts', '*.po.ts'],
-        env: { jasmine: true },
-        extends: ['kifor/tests'],
-      },
-      {
-        files: ['*.html'],
-        extends: ['kifor/angular-template'],
-        rules: {},
-      },
-   ],
+      extends: ['kifor/typescript', 'kifor/angular-typescript'],
+    },
+    {
+      files: ['*.spec.ts', '*.host.ts', '*.po.ts'],
+      env: { jasmine: true /* or 'jest/globals': true,*/ },
+      extends: ['kifor/tests', 'kifor/tests-jasmine' /* or 'kifor/tests-jest' */],
+    },
+    {
+      files: ['*.html'],
+      extends: ['kifor/angular-template'],
+    },
+  ],
 };
+```
+
+```json
+// .eslintrc.json file
+{
+  "root": true,
+  "ignorePatterns": ["*.js"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "project": ["tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": ["kifor/typescript", "kifor/angular-typescript"]
+    },
+    {
+      "files": ["*.spec.ts", "*.host.ts", "*.po.ts"],
+      "env": { "jest/globals": true },
+      "extends": ["kifor/tests", "kifor/tests-jest"]
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["kifor/angular-template"],
+      "rules": {}
+    }
+  ]
+}
+
 ```
 
 ## Tsconfig
