@@ -1,7 +1,4 @@
 module.exports = {
-	env: { jasmine: true },
-	plugins: ['jasmine'],
-	extends: ['plugin:jasmine/recommended'],
 	rules: {
 		/* General */
 		'max-nested-callbacks': 'off', // Avoid this rule in tests because "describe" and "it" are also counted as callbacks
@@ -9,9 +6,6 @@ module.exports = {
 
 		/* Typescript */
 		'@typescript-eslint/no-non-null-assertion': 'off',
-
-		/* Jasmine */
-		'jasmine/new-line-before-expect': 'off',
 
 		/* Angular */
 		'@angular-eslint/prefer-on-push-component-change-detection': 'off',

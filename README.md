@@ -36,19 +36,18 @@ module.exports = {
         project: ['tsconfig.json'],
         createDefaultProgram: true,
       },
-        extends: ['kifor/typescript', 'kifor/angular-typescript'],
-      },
-      {
-        files: ['*.spec.ts', '*.host.ts', '*.po.ts'],
-        env: { jasmine: true },
-        extends: ['kifor/tests'],
-      },
-      {
-        files: ['*.html'],
-        extends: ['kifor/angular-template'],
-        rules: {},
-      },
-   ],
+      extends: ['kifor/typescript', 'kifor/angular-typescript'],
+    },
+    {
+      files: ['*.spec.ts', '*.host.ts', '*.po.ts'],
+      env: { jasmine: true /* or 'jest/globals': true,*/ },
+      extends: ['kifor/tests', 'kifor/tests-jasmine' /* or 'kifor/tests-jest' */],
+    },
+    {
+      files: ['*.html'],
+      extends: ['kifor/angular-template'],
+    },
+  ],
 };
 ```
 
@@ -59,21 +58,24 @@ module.exports = {
   "ignorePatterns": ["*.js"],
   "overrides": [
     {
-       "files": ["*.ts"],
-       "parserOptions": {
-         "ecmaVersion": 2020,
-         "sourceType": "module",
-         "project": ["tsconfig.json"],
-         "createDefaultProgram": true
-       },
-       "extends": ["kifor/typescript"]
+      "files": ["*.ts"],
+      "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "project": ["tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": ["kifor/typescript", "kifor/angular-typescript"]
     },
     {
-       "files": ["*.spec.ts", "*.host.ts", "*.po.ts"],
-       "env": {
-         "jasmine": true
-       },
-       "extends": ["kifor/tests"]
+      "files": ["*.spec.ts", "*.host.ts", "*.po.ts"],
+      "env": { "jest/globals": true },
+      "extends": ["kifor/tests", "kifor/tests-jest"]
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["kifor/angular-template"],
+      "rules": {}
     }
   ]
 }

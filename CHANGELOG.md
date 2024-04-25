@@ -1,5 +1,14 @@
 # Changelog
 
+<a name="1.1.0"></a>
+# 1.1.0
+
+1. [x] Added: new typescript `quote-props` rule ([9](https://github.com/kiforks/eslint-config-kifor/pull/9)) ([@kiforks](https://github.com/kiforks)).
+2. [x] Added: new configuration for stylistics rules ([9](https://github.com/kiforks/eslint-config-kifor/pull/9)) ([@kiforks](https://github.com/kiforks)).
+3. [x] Added: new configuration files for pre-commit ([9](https://github.com/kiforks/eslint-config-kifor/pull/9)) ([@kiforks](https://github.com/kiforks)).
+4. [x] Added: validation for pre-commit message ([9](https://github.com/kiforks/eslint-config-kifor/pull/9)) ([@kiforks](https://github.com/kiforks)).
+5. [x] Added: new config files for separated jest and jasmine ([9](https://github.com/kiforks/eslint-config-kifor/pull/9)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.0.8"></a>
 # 1.0.8
 
