@@ -63,7 +63,7 @@
 		"eslint-config-angular-strict": "^1.0.7",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-jasmine": "^4.1.3",
-		"eslint-plugin-jest": "^28.2.0",
+		"eslint-plugin-jest": "^28.3.0",
 		"eslint-plugin-max-params-no-constructor": "^0.0.4",
 		"eslint-plugin-prettier": "^5.1.3",
 		"eslint-scope": "8.0.1",
