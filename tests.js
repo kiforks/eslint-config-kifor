@@ -6,6 +6,7 @@ module.exports = {
 
 		/* Typescript */
 		'@typescript-eslint/no-non-null-assertion': 'off',
+		'@typescript-eslint/prefer-destructuring': 'off',
 
 		/* Angular */
 		'@angular-eslint/prefer-on-push-component-change-detection': 'off',

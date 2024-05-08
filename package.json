@@ -1,7 +1,7 @@
 {
 	"name": "eslint-config-kifor",
 	"description": "eslint shareable config",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"engines": {
 		"node": ">=20.8.1"
 	},

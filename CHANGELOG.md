@@ -1,5 +1,10 @@
 # Changelog
 
+<a name="1.1.1"></a>
+# 1.1.1
+
+1. [x] Changed: disabled `@typescript-eslint/prefer-destructuring` rule ([10](https://github.com/kiforks/eslint-config-kifor/pull/10)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.1.0"></a>
 # 1.1.0
 
