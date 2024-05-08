@@ -9,6 +9,7 @@ module.exports = {
 
 		/* Typescript */
 		'@typescript-eslint/no-non-null-assertion': 'off',
+		'@typescript-eslint/prefer-destructuring': 'off',
 
 		/* Jasmine */
 		'jasmine/new-line-before-expect': 'off',
