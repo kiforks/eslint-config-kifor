@@ -1,5 +1,12 @@
 # Changelog
 
+<a name="1.1.2"></a>
+# 1.1.2
+
+1. [x] Changed: CI/CD workflows ([16](https://github.com/kiforks/eslint-config-kifor/pull/17)) ([@kiforks](https://github.com/kiforks)).
+2. [x] Updated: package versions ([16](https://github.com/kiforks/eslint-config-kifor/pull/17)) ([@kiforks](https://github.com/kiforks)).
+3. [x] Added: .gitattribute configuration file ([16](https://github.com/kiforks/eslint-config-kifor/pull/17)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.1.1"></a>
 # 1.1.1
 
