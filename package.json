@@ -53,7 +53,7 @@
 	"dependencies": {
 		"@angular-eslint/builder": "17.5.1",
 		"@angular-eslint/eslint-plugin": "17.5.1",
-		"@angular-eslint/eslint-plugin-template": "17.5.1",
+		"@angular-eslint/eslint-plugin-template": "18.0.1",
 		"@angular-eslint/schematics": "17.5.1",
 		"@angular-eslint/template-parser": "17.5.1",
 		"@stylistic/eslint-plugin-js": "^2.1.0",
