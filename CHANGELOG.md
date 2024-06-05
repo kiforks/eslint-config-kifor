@@ -4,7 +4,7 @@
 # 1.1.3
 
 1. [x] Disabled: `angular-eslint/template/no-call-expression` rule of angular-template configuration ([23](https://github.com/kiforks/eslint-config-kifor/pull/23)) ([@kiforks](https://github.com/kiforks)).
-2. 1. [x] Updated: package versions ([23](https://github.com/kiforks/eslint-config-kifor/pull/23)) ([@kiforks](https://github.com/kiforks)).
+2. [x] Updated: package versions ([23](https://github.com/kiforks/eslint-config-kifor/pull/23)) ([@kiforks](https://github.com/kiforks)).
 
 <a name="1.1.2"></a>
 # 1.1.2
