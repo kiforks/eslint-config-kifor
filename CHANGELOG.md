@@ -1,11 +1,17 @@
 # Changelog
 
+<a name="1.1.3"></a>
+# 1.1.3
+
+1. [x] Disabled: `angular-eslint/template/no-call-expression` rule of angular-template configuration ([23](https://github.com/kiforks/eslint-config-kifor/pull/23)) ([@kiforks](https://github.com/kiforks)).
+2. [x] Updated: package versions ([23](https://github.com/kiforks/eslint-config-kifor/pull/23)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.1.2"></a>
 # 1.1.2
 
-1. [x] Changed: CI/CD workflows ([16](https://github.com/kiforks/eslint-config-kifor/pull/17)) ([@kiforks](https://github.com/kiforks)).
-2. [x] Updated: package versions ([16](https://github.com/kiforks/eslint-config-kifor/pull/17)) ([@kiforks](https://github.com/kiforks)).
-3. [x] Added: .gitattribute configuration file ([16](https://github.com/kiforks/eslint-config-kifor/pull/17)) ([@kiforks](https://github.com/kiforks)).
+1. [x] Changed: CI/CD workflows ([17](https://github.com/kiforks/eslint-config-kifor/pull/17)) ([@kiforks](https://github.com/kiforks)).
+2. [x] Updated: package versions ([17](https://github.com/kiforks/eslint-config-kifor/pull/17)) ([@kiforks](https://github.com/kiforks)).
+3. [x] Added: .gitattribute configuration file ([17](https://github.com/kiforks/eslint-config-kifor/pull/17)) ([@kiforks](https://github.com/kiforks)).
 
 <a name="1.1.1"></a>
 # 1.1.1
