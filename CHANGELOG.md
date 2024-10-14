@@ -1,5 +1,10 @@
 # Changelog
 
+<a name="1.1.6"></a>
+# 1.1.6
+
+1. [x] Revert package versions ([26](https://github.com/kiforks/eslint-config-kifor/pull/26)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.1.5"></a>
 # 1.1.5
 
