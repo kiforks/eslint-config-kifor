@@ -2,7 +2,7 @@ module.exports = {
 	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
 	plugins: ['@typescript-eslint', '@stylistic/js', '@stylistic/ts', 'max-params-no-constructor'],
 	rules: {
-		'@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+		'@typescript-eslint/lines-between-class-members': ['error', { exceptAfterSingleLine: true }],
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/no-extraneous-class': ['error', { allowEmpty: true, allowStaticOnly: true }],
 		'@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
