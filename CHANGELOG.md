@@ -1,5 +1,10 @@
 # Changelog
 
+<a name="1.1.4"></a>
+# 1.1.4
+
+1. [x] Update package versions ([24](https://github.com/kiforks/eslint-config-kifor/pull/24)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.1.3"></a>
 # 1.1.3
 
