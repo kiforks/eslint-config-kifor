@@ -1,5 +1,15 @@
 # Changelog
 
+<a name="1.1.5"></a>
+# 1.1.5
+
+1. [x] Fix `@typescript-eslint/lines-between-class-members` rule ([25](https://github.com/kiforks/eslint-config-kifor/pull/25)) ([@kiforks](https://github.com/kiforks)).
+
+<a name="1.1.4"></a>
+# 1.1.4
+
+1. [x] Update package versions ([24](https://github.com/kiforks/eslint-config-kifor/pull/24)) ([@kiforks](https://github.com/kiforks)).
+
 <a name="1.1.3"></a>
 # 1.1.3
 

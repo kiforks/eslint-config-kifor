@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 const typescriptConfig = require('./typescript.js');
 
 module.exports = {
